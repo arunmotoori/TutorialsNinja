@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">11</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">107,898</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">tests.LoginTest</td><td><a href="#m0">loginWithoutProvidingAnyCredentailsTest</a></td><td rowspan="1">1617705849285</td><td rowspan="1">12730</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">tests.ForgotPasswordTest</td><td><a href="#m1">resetPasswordForInvalidEmailAddressTest</a></td><td rowspan="1">1617705865923</td><td rowspan="1">4669</td></tr><tr class="passedeven"><td><a href="#m2">resetPasswordTest</a></td><td rowspan="1">1617705873665</td><td rowspan="1">7672</td></tr><tr class="passedeven"><td><a href="#m3">resetPasswordWithoutProvidingEmailAddressTest</a></td><td rowspan="1">1617705884795</td><td rowspan="1">3483</td></tr><tr class="passedodd"><td rowspan="2">tests.LoginTest</td><td><a href="#m4">loginWithInValidCredentailsTest</a></td><td rowspan="1">1617705833960</td><td rowspan="1">5155</td></tr><tr class="passedodd"><td><a href="#m5">loginWithValidCredentailsTest</a></td><td rowspan="1">1617705842256</td><td rowspan="1">3983</td></tr><tr class="passedeven"><td rowspan="3">tests.RegisterAccountTest</td><td><a href="#m6">registerNewAccountWithMandatoryFieldsTest</a></td><td rowspan="1">1617705805243</td><td rowspan="1">6766</td></tr><tr class="passedeven"><td><a href="#m7">registerNewAccountWithSubscriptionTest</a></td><td rowspan="1">1617705815174</td><td rowspan="1">7101</td></tr><tr class="passedeven"><td><a href="#m8">registerNewAccountWithoutEnteringAnyFeildsTest</a></td><td rowspan="1">1617705825389</td><td rowspan="1">5308</td></tr><tr class="passedodd"><td rowspan="3">tests.SearchTest</td><td><a href="#m9">searchForANonExistingProductTest</a></td><td rowspan="1">1617705891256</td><td rowspan="1">3475</td></tr><tr class="passedodd"><td><a href="#m10">searchTest</a></td><td rowspan="1">1617705897732</td><td rowspan="1">4587</td></tr><tr class="passedodd"><td><a href="#m11">searchWithoutProvidingAnyProductTest</a></td><td rowspan="1">1617705905529</td><td rowspan="1">2616</td></tr></tbody>
+</table>
+<h2>Test</h2><h3 id="m0">tests.LoginTest#loginWithoutProvidingAnyCredentailsTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;div[class=&apos;alert alert-danger alert-dismissible&apos;]&quot;}
+  (Session info: chrome=89.0.4389.114)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-4V52DMIG&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\arunm\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65101}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d2e65e3fb728ee6e926d496b1a3cf8c1
+*** Element info: {Using=css selector, value=div[class=&apos;alert alert-danger alert-dismissible&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy12.getText(Unknown Source)
+	at tests.LoginTest.loginWithoutProvidingAnyCredentailsTest(LoginTest.java:94)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">tests.ForgotPasswordTest#resetPasswordForInvalidEmailAddressTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">tests.ForgotPasswordTest#resetPasswordTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">tests.ForgotPasswordTest#resetPasswordWithoutProvidingEmailAddressTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">tests.LoginTest#loginWithInValidCredentailsTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">tests.LoginTest#loginWithValidCredentailsTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">tests.RegisterAccountTest#registerNewAccountWithMandatoryFieldsTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">tests.RegisterAccountTest#registerNewAccountWithSubscriptionTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">tests.RegisterAccountTest#registerNewAccountWithoutEnteringAnyFeildsTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">tests.SearchTest#searchForANonExistingProductTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">tests.SearchTest#searchTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">tests.SearchTest#searchWithoutProvidingAnyProductTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
